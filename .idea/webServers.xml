@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="97a2577f-2fc8-4ec8-8bb2-852ea2b75e99" name="Pokemon" url="http://localhost">
+        <fileTransfer mountedRoot="C:\OSPanel\domains\Pokemon-game" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
