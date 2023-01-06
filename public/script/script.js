@@ -55,7 +55,6 @@
     document.getElementById('gen-input').value = 'boy';
     buttonBoy.style.display = "none";
     buttonGirl.style.display = "none";
-    console.log(boyAvatar);
     let gender = 'boy';
     buttonSectionBoy.style.display = "block";
     boyAvatar.style.display = "flex";

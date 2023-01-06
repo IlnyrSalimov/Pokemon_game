@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/style/normalize.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,16 +17,21 @@
     <div class="message" style="margin-top: 20px; margin-bottom: 40px; font-size: 18px; width: 500px; height: 200px; background-color: beige; padding: 10px 15px">
         <p id="message">Lorem ipsum dolor sit amet,</p>
         <div  id="form" style="display: none">
-            <form action="app/register.php" method="post" id="forma" style="display: flex; flex-direction:column; row-gap: 10px;">
+            <form style="display: flex; flex-direction:column; row-gap: 10px;">
                 <label><input id="email-input" type="email" name="email" placeholder="email"></label>
                 <label><input id="name-input" type="text" name="name" placeholder="name"></label>
                 <label><input id="pass-input" type="password" name="password" placeholder="password"></label>
                 <input id="gen-input" type="text" name="gender" placeholder="gender" value="" style="display:none;">
             </form>
-            <p id="error-message-for-input-email"></p>
-            <p id="error-message-for-input-name"></p>
-            <p id="error-message-for-input-password"></p>
+
+            <div id="error-div">
+                <p id="error-message-for-input-email" style="color:red;"></p>
+                <p id="error-message-for-input-name" style="color:red;"></p>
+                <p id="error-message-for-input-password" style="color:red;"></p>
+            </div>
         </div>
+        <a href="./public/game.php"><input type="button" id="start" style="display:none; margin: 0 auto;" value="Начать игру!"></a>
+
         <div id="Boy" style="display:none; justify-content: center; column-gap: 50px;">
             <img src="./public/img/boy1.jpg" alt="boy1" style="width: 80px; height: auto;">
             <img src="./public/img/boy2.jpg" alt="boy2" style="width: 80px; height: auto;">
@@ -46,6 +52,8 @@
         <button id="btn-Boy" style="font-size: 24px; display: none;">Мальчик</button>
         <button id="btn-Girl" style="font-size: 24px; display: none;">Девочка</button>
         <button id="btn-CreatePerson" style="font-size: 24px; display: none;">Создать персонажа</button>
+
+        <!--кнопки выбора пола-->
         <div id="section-btn-boy" style="display: none">
             <button id="btn-Boy_icon1" style="font-size: 24px;">1</button>
             <button id="btn-Boy_icon2" style="font-size: 24px;">2</button>
@@ -56,7 +64,9 @@
             <button id="btn-Girl_icon2" style="font-size: 24px;">2</button>
             <button id="btn-Girl_icon3" style="font-size: 24px;">3</button>
         </div>
-        <button id="btn-send" type="submit" style="display: none" form="forma">Отправить</button>
+        <!--кнопки выбора пола-->
+
+        <button id="btn-send" type="submit" style="display: none">Отправить</button>
 
     </div>
 </main>
