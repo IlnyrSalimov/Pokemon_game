@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map {
+    padding-top: 40px;
+}
+.map canvas {
+    margin: 0 auto;
+    width: 768px;
+    height:640px;
+}
+.nav-button {
+    display: flex;
+    column-gap: 40px;
+}
+.pokedex {
+    display: none;
+    width: 768px;
+    height:640px;
+}
+
+.inventory {
+    display: none;
+    width: 768px;
+    height:640px;
+}
